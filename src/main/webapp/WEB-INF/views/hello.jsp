@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<p>Hello ${msg }</p>
+	<p>Hello ${person.name }</p>
 </body>
 </html>
