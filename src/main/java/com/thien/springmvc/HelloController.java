@@ -22,7 +22,7 @@ public class HelloController {
 	@Qualifier("person2")
 	private Person person;
 	
-	@RequestMapping(value= {"/hello", "/say/hello"}, method=RequestMethod.GET)
+	@RequestMapping(value= {"/hello"}, method=RequestMethod.GET)
 	public String sayHello(ModelMap map) {
 //		map.addAttribute("msg", "Thien");
 		map.addAttribute("person", person);

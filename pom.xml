@@ -14,7 +14,7 @@
 		<springframework.version>4.0.6.RELEASE</springframework.version>
 	</properties>
 	<dependencies>
-
+		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -31,13 +31,13 @@
 			<artifactId>spring-core</artifactId>
 			<version>5.2.6.RELEASE</version>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
 			<version>5.2.6.RELEASE</version>
 		</dependency>
-
+		
 		<!-- Below declared dependencies are included for the servers who may complain 
 			about servlet/jstl missing dependency -->
 		<dependency>
@@ -62,13 +62,20 @@
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.4-1206-jdbc42</version>
+		</dependency>		
 	</dependencies>
 	<build>
+		
+		
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<version>2.4</version>
+				<version>3.3.2</version>
 				<configuration>
 					<warSourceDirectory>src/main/webapp</warSourceDirectory>
 					<warName>Hello</warName>
@@ -76,6 +83,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		
 		<finalName>HelloWorld</finalName>
 	</build>
 </project>
